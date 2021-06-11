@@ -7,23 +7,13 @@ body
 header
 {
     max-width: 1440px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    display: grid;
+    grid-template-columns: 70% 10% 10% 10%;
 }
 
-header a
-{
-    text-decoration: none;
+nav {
     color: #0065fc;
-}
-
-header div
-{
-    width: 1176px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-size: 16px;
 }
 
 p
@@ -36,13 +26,6 @@ h3
 {
     font-size: 18px;
     margin-left: 10px;
-}
-
-header nav
-{
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
 }
 
 header a:hover
@@ -58,19 +41,19 @@ header a:hover
 
 .Hébergements
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-row-gap: 20px;
     max-width: 800px;
     margin-left: 86px;
 }
 
-.Titre1
-{
-    flex: 100%;
+.Titre1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-.item1
+.item1 .item2 .item3 .item4 .item5
 {
     width: 240px;
     border: 0.01px solid grey;
@@ -86,14 +69,6 @@ header a:hover
     border-top-right-radius: 10px; 
 }
 
-.item2
-{
-    width: 240px;
-    border: 0.01px solid grey;
-    border-radius: 14px;
-    max-height: 190px;
-}
-
 #Image2item2
 {
     width: 240px;
@@ -102,66 +77,37 @@ header a:hover
     border-top-right-radius: 10px;
 }
 
-.item3
-{
-    width: 240px;
-    border: 0.01px solid grey;
-    border-radius: 14px;
-    max-height: 190px;
-}
-
-#Image3item3
-{
+#Image3item3{
     width: 240px;
     max-height: 115px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.item4
-{
-    width: 240px;
-    border: 0.01px solid grey;
-    border-radius: 14px;
-    max-height: 190px;
-}
-
-#Image4item4
-{
+#Image4item4{
     width: 240px;
     max-height: 115px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.item5
-{
-    width: 240px;
-    border: 0.01px solid grey;
-    border-radius: 14px;
-    max-height: 190px;
-}
 
-#Image5item5
-{
+#Image5item5{
     width: 240px;
     max-height: 115px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.item6
-{
-    width: 240px;
-    border: 0.01px solid grey;
-    border-radius: 14px;
-    max-height: 190px;
-}
 
-#Image6item6
-{
+#Image6item6{
     width: 240px;
     max-height: 115px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+i
+{
+    color: blue;
 }
