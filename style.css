@@ -1,0 +1,167 @@
+body
+{
+    max-width: 1440px;
+    margin: auto;
+}
+
+header
+{
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+header a
+{
+    text-decoration: none;
+    color: #0065fc;
+}
+
+header div
+{
+    width: 1176px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p
+{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+h3
+{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+header nav
+{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a:hover
+{
+    color: rgb(255, 115, 0);
+}
+
+.Logo
+{
+    width: 100px;
+    height: 30px;
+}
+
+.Hébergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin-left: 86px;
+}
+
+.Titre1
+{
+    flex: 100%;
+}
+
+.item1
+{
+    width: 240px;
+    border: 0.01px solid grey;
+    border-radius: 14px;
+    max-height: 190px;
+}
+
+#Image1item1
+{
+    width: 240px;
+    max-height: 115px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.item2
+{
+    width: 240px;
+    border: 0.01px solid grey;
+    border-radius: 14px;
+    max-height: 190px;
+}
+
+#Image2item2
+{
+    width: 240px;
+    max-height: 115px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.item3
+{
+    width: 240px;
+    border: 0.01px solid grey;
+    border-radius: 14px;
+    max-height: 190px;
+}
+
+#Image3item3
+{
+    width: 240px;
+    max-height: 115px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.item4
+{
+    width: 240px;
+    border: 0.01px solid grey;
+    border-radius: 14px;
+    max-height: 190px;
+}
+
+#Image4item4
+{
+    width: 240px;
+    max-height: 115px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.item5
+{
+    width: 240px;
+    border: 0.01px solid grey;
+    border-radius: 14px;
+    max-height: 190px;
+}
+
+#Image5item5
+{
+    width: 240px;
+    max-height: 115px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.item6
+{
+    width: 240px;
+    border: 0.01px solid grey;
+    border-radius: 14px;
+    max-height: 190px;
+}
+
+#Image6item6
+{
+    width: 240px;
+    max-height: 115px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
