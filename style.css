@@ -20,11 +20,11 @@ header a:hover{
 }
 
 header a {
-    text-decoration: none;
-    color: #0065fc;
-    font-size: 16px;
-    justify-self: center;
-    align-self: center;
+    text-decoration: none;/* Ne va pas au bout de la page */
+    color: #0065fc;/* Ne va pas au bout de la page */
+    font-size: 16px;/* Ne va pas au bout de la page */
+    justify-self: center;/* Ne va pas au bout de la page */
+    align-self: center;/* Ne va pas au bout de la page */
 }
 /*  [-----------------------------------HEADER-----------------------------------] */
 
@@ -142,14 +142,19 @@ h2 {
 }
 
 /* [------------------------------SECTION HERBERGEMENTS------------------------------] */
-.Hébergements
-{
+.Hébergements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Content{
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-row-gap: 20px;
     max-width: 800px;
     margin-left: 50px;
     margin-top: 50px;
+    grid-column-gap: 20px;
 }
 
 .Titre1 {
@@ -157,7 +162,7 @@ h2 {
     grid-column-end: 4;
 }
 
-.item1 .item2 .item3 .item4 .item5
+.item1 .item2 .item3 .item4 .item5 .item6
 {
     width: 240px;
     border: 0.01px solid grey;
@@ -220,14 +225,60 @@ i svg {
 }
 
 
-#Image6item6{
-    width: 240px;
-    max-height: 115px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+#Image6item6{ 
+    width: 240px;/* Image étirée */
+    max-height: 115px;/* Image étirée */
+    border-top-left-radius: 10px;/* Image étirée */
+    border-top-right-radius: 10px;/* Image étirée */
 }
 
 i{
     color: blue;
 }
+
+h4 a {
+    text-decoration: none;
+    color: black;
+}
+
 /* [------------------------------SECTION HERBERGEMENTS------------------------------] */
+aside {
+    max-width: 350px;
+    display: grid;
+    grid-template-columns: 37% 63%;
+    grid-template-rows: 15% 28% 28% 28%;
+    margin-top: 50px;
+
+}
+
+.LPP1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: left;
+    align-self: center;
+}
+
+#FI1 {
+    width: 127px;
+    height: 120px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+}
+
+.FirstImage{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+}
+
+.logoLPP1 {
+    grid-column-start: 3; /* logo qui sort de la page */
+    grid-column-end: 3;/* logo qui sort de la page */
+    justify-self: left;/* logo qui sort de la page */
+    align-self: center;/* logo qui sort de la page */
+}
+
