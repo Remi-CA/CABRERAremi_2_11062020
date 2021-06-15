@@ -6,6 +6,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/*  [-----------------------------------HEADER-----------------------------------] */
 header {
     max-width: 1440px;
     display: grid;
@@ -14,20 +15,28 @@ header {
     margin-top: 40px;
 }
 
-nav {
+header a:hover{
+    color: rgb(255, 115, 0);
+}
+
+header a {
+    text-decoration: none;
     color: #0065fc;
     font-size: 16px;
     justify-self: center;
     align-self: center;
 }
+/*  [-----------------------------------HEADER-----------------------------------] */
 
+
+/* [------------------------------SECTION RECHERCHE------------------------------] */
 .button{
     text-decoration: none;
     background-color: #0065fc;
     color: white;
     border-radius: 0px 10px 10px 0px;
     padding: 13px;
-    cursor: pointer;
+    font-weight: bold;
 }
 
 svg
@@ -36,9 +45,40 @@ svg
     height: 20px;
 }
 
-.BlocSearch
-{
+.BlocSearch {
     margin-left: 16px;
+}
+
+.BlocSearch2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+.BlocSearch2 div {
+    align-self: center;
+    justify-self: left;
+    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, .30);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+.BlocSearch2 svg {
+    color: #0065fc;
+}
+
+
+.button2 {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px;
+    margin-left: 15px;
 }
 
 .BlocSearchLib {
@@ -47,8 +87,7 @@ svg
     margin-bottom: 20px;
 }
 
-#search
-{
+#search {
     border: none;
     font-weight: bold;
     color: black;
@@ -62,6 +101,29 @@ p{
     margin-left: 10px;
 }
 
+.info {
+    display: flex;
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+.info svg {
+    color: #0065fc;
+    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, .30);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-radius: 100%;
+    padding: 8px;
+    width: 8px;
+    height: 10px;
+    justify-self: center;
+    align-self: center;
+}
+/* [------------------------------SECTION RECHERCHE------------------------------] */
+
+
+
 h3 {
     font-size: 18px;
     margin-left: 10px;
@@ -71,10 +133,7 @@ h2 {
     margin-bottom: 8px;
 }
 
-header a:hover
-{
-    color: rgb(255, 115, 0);
-}
+
 
 .Logo
 {
@@ -82,13 +141,15 @@ header a:hover
     height: 30px;
 }
 
+/* [------------------------------SECTION HERBERGEMENTS------------------------------] */
 .Hébergements
 {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-row-gap: 20px;
     max-width: 800px;
-    margin-left: 86px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .Titre1 {
@@ -103,6 +164,23 @@ header a:hover
     border-radius: 14px;
     max-height: 190px;
 }
+/* SECTION HERBERGEMENTS --- NOTATION ETOILES */
+i svg {
+    color: #0065fc;
+    height: 12px;
+    width: 12px;
+}
+
+.Notation {
+    margin-left: 10px;
+}
+
+
+.GreyStar svg{
+    color: grey;
+    opacity: 0.3;
+}
+/* SECTION HERBERGEMENTS --- NOTATION ETOILES */
 
 #Image1item1{
     width: 240px;
@@ -152,3 +230,4 @@ header a:hover
 i{
     color: blue;
 }
+/* [------------------------------SECTION HERBERGEMENTS------------------------------] */
