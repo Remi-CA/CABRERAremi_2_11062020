@@ -282,3 +282,96 @@ aside {
     align-self: center;/* logo qui sort de la page */
 }
 
+article {
+    display: grid;
+    max-width: 1340px;
+    max-height: 475px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 45% 45%;
+}
+
+article h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+
+#Img1 {
+    width: 300px;
+    height: 390px;
+}
+
+#Img2 {
+    width: 300px;
+    height: 115px;
+}
+
+#Img3 {
+    width: 300px;
+    height: 115px;
+}
+
+#Img4 {
+    width: 300px;
+    height: 390px;
+}
+
+#Img5 {
+    width: 300px;
+    height: 115px;
+}
+
+#Img6 {
+    width: 300px;
+    height: 115px;
+}
+
+.bloc2 {
+    justify-self: center;
+    align-self: center;
+}
+
+.bloc3 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.bloc5 {
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    justify-self: center;
+    align-self: center;
+}
+
+.bloc6 {
+    grid-row-start: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    justify-self: center;
+    align-self: center;
+}
+
+ol {
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 370px;
+    margin-top: 130px;
+}
