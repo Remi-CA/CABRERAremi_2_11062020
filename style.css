@@ -9,10 +9,10 @@ body {
 /*  [-----------------------------------HEADER-----------------------------------] */
 header {
     max-width: 1440px;
-    display: grid;
-    grid-template-columns: 70% 10% 10% 10%;
-    margin-bottom: 50px;
-    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px 54px 0px;
 }
 
 header a:hover{
@@ -20,71 +20,26 @@ header a:hover{
 }
 
 header a {
-    text-decoration: none;/* Ne va pas au bout de la page */
-    color: #0065fc;/* Ne va pas au bout de la page */
-    font-size: 16px;/* Ne va pas au bout de la page */
-    justify-self: center;/* Ne va pas au bout de la page */
-    align-self: center;/* Ne va pas au bout de la page */
+    text-decoration: none;
+    color: #0065fc;
+}
+
+header nav {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
 }
 /*  [-----------------------------------HEADER-----------------------------------] */
 
 
-/* [------------------------------SECTION RECHERCHE------------------------------] */
-.button{
-    text-decoration: none;
-    background-color: #0065fc;
-    color: white;
-    border-radius: 0px 10px 10px 0px;
-    padding: 13px;
-    font-weight: bold;
-}
-
-svg
-{
-    width: 20px;
-    height: 20px;
-}
-
-.BlocSearch {
-    margin-left: 16px;
-}
-
-.BlocSearch2 {
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    margin-top: 30px;
-}
-
-.BlocSearch2 div {
-    align-self: center;
-    justify-self: left;
-    border: 1px solid rgb(0, 0, 0);
-    border: 1px solid rgba(0, 0, 0, .30);
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border-radius: 25px;
-    padding: 8px;
-}
-
-.BlocSearch2 svg {
-    color: #0065fc;
-}
-
-
-.button2 {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+/* [------------------------------SEARCH BANNER------------------------------] */
+.DescriptionBanner p {
     font-size: 16px;
-    padding: 8px;
-    margin-left: 15px;
+    padding-bottom: 15px;
 }
 
-.BlocSearchLib {
-    margin: auto;
-    font-size: 14px;
-    margin-bottom: 20px;
+.Search {
+    margin-left: 16px;
 }
 
 #search {
@@ -96,18 +51,50 @@ svg
     padding: 13px;
 }
 
-p{
-    font-size: 12px;
-    margin-left: 10px;
+.Searchbutton {
+    text-decoration: none;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.Search2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    padding-top: 30px;
+}
+
+.Search2 div {
+    align-self: center;
+    justify-self: left;
+    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, .30);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+.Filterbutton {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px;
+    margin-left: 15px;
 }
 
 .info {
     display: flex;
-    margin-left: 16px;
-    margin-top: 20px;
+    max-width: 450px;
+    justify-content: space-between;
+    padding: 16px 0px 16px 0px;
 }
 
-.info svg {
+.info i {
     color: #0065fc;
     border: 1px solid rgb(0, 0, 0);
     border: 1px solid rgba(0, 0, 0, .30);
@@ -115,8 +102,8 @@ p{
     background-clip: padding-box;
     border-radius: 100%;
     padding: 8px;
-    width: 8px;
-    height: 10px;
+    width: 10px;
+    height: 14px;
     justify-self: center;
     align-self: center;
 }
@@ -230,6 +217,7 @@ i svg {
     max-height: 115px;/* Image étirée */
     border-top-left-radius: 10px;/* Image étirée */
     border-top-right-radius: 10px;/* Image étirée */
+    object-fit: cover;
 }
 
 i{
