@@ -114,7 +114,6 @@ header nav {
 /* [-----------------------------------GENERAL-----------------------------------] */
 h3 {
     font-size: 18px;
-    margin-left: 10px;
 }
 
 h2 {
@@ -129,6 +128,7 @@ i{
 .Accommodation {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 110px;
 }
 /* [-------------------------CONTENT-------------------------] */
 .Content{
@@ -183,6 +183,12 @@ aside {
     width: 400px;
 }
 
+aside i {
+    color: #0065fc;
+    height: 12px;
+    width: 12px;
+}
+
 .Titleaside {
     display: flex;
     justify-content: space-between;
@@ -191,11 +197,14 @@ aside {
 
 .Titleaside i {
     color: black;
+    width: 30px;
+    height: 24px;
 }
 
 .Blocinside {
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
 }
 
 .Pictureaside {
@@ -203,87 +212,74 @@ aside {
     height: 134px;
     object-fit: cover;
     float: left;
+    border-radius: 14px 0 0 14px;
 }
 
 
-
-
-
-
-
+/* [-----------------------------------ARTICLE-----------------------------------] */
 article {
-    display: grid;
     max-width: 1340px;
     max-height: 475px;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 10% 45% 45%;
 }
 
 article h2 {
-    grid-column-start: 1;
-    grid-column-end: 5;
+    padding-bottom: 20px;
 }
 
+.Activites {
+    display: flex;
+    justify-content: space-between;
+}
 
-#Img1 {
+.Blocactivites2  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Blocactivites4  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Img1 {
     width: 300px;
     height: 390px;
+    object-fit: cover;
 }
 
-#Img2 {
+.Img2 {
     width: 300px;
     height: 115px;
+    object-fit: cover;
 }
 
-#Img3 {
+.Img3 {
     width: 300px;
     height: 115px;
+    object-fit: cover;
 }
 
-#Img4 {
+.Img4 {
     width: 300px;
     height: 390px;
+    object-fit: cover;
 }
 
-#Img5 {
+.Img5 {
     width: 300px;
     height: 115px;
+    object-fit: cover;
 }
 
-#Img6 {
+.Img6 {
     width: 300px;
     height: 115px;
+    object-fit: cover;
 }
 
-.bloc2 {
-    justify-self: center;
-    align-self: center;
-}
-
-.bloc3 {
-    grid-row-start: 3;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    justify-self: center;
-    align-self: center;
-}
-
-.bloc5 {
-    grid-row-start: 2;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    justify-self: center;
-    align-self: center;
-}
-
-.bloc6 {
-    grid-row-start: 3;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    justify-self: center;
-    align-self: center;
-}
-
+/* [-----------------------------------FOOTER-----------------------------------] */
 ol {
     padding-inline-start: 0px;
 }
@@ -301,6 +297,5 @@ li a {
 footer {
     display: flex;
     justify-content: space-between;
-    margin-right: 370px;
-    margin-top: 130px;
+    padding: 130px 370px 0 0;
 }
