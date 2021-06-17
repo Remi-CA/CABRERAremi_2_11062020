@@ -15,6 +15,11 @@ header {
     padding: 40px 0px 54px 0px;
 }
 
+.Logo {
+    width: 100px;
+    height: 30px;
+}
+
 header a:hover{
     color: rgb(255, 115, 0);
 }
@@ -29,8 +34,6 @@ header nav {
     width: 380px;
     justify-content: space-between;
 }
-/*  [-----------------------------------HEADER-----------------------------------] */
-
 
 /* [------------------------------SEARCH BANNER------------------------------] */
 .DescriptionBanner p {
@@ -107,10 +110,8 @@ header nav {
     justify-self: center;
     align-self: center;
 }
-/* [------------------------------SECTION RECHERCHE------------------------------] */
 
-
-
+/* [-----------------------------------GENERAL-----------------------------------] */
 h3 {
     font-size: 18px;
     margin-left: 10px;
@@ -120,108 +121,53 @@ h2 {
     margin-bottom: 8px;
 }
 
-
-
-.Logo
-{
-    width: 100px;
-    height: 30px;
+i{
+    color: blue;
 }
 
-/* [------------------------------SECTION HERBERGEMENTS------------------------------] */
-.Hébergements {
+/* [------------------------------ACCOMMODATION------------------------------] */
+.Accommodation {
     display: flex;
     justify-content: space-between;
 }
-
+/* [-------------------------CONTENT-------------------------] */
 .Content{
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-row-gap: 20px;
+    display: flex;
     max-width: 800px;
-    margin-left: 50px;
-    margin-top: 50px;
-    grid-column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
 }
 
-.Titre1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
+.TitleAccommodation {
+  flex-basis: 100%;
 }
 
 .item1 .item2 .item3 .item4 .item5 .item6
 {
-    width: 240px;
+    width: 236px;
     border: 0.01px solid grey;
     border-radius: 14px;
-    max-height: 190px;
+    max-height: 183px;
 }
-/* SECTION HERBERGEMENTS --- NOTATION ETOILES */
-i svg {
+
+.Content i {
     color: #0065fc;
     height: 12px;
     width: 12px;
 }
 
-.Notation {
-    margin-left: 10px;
-}
-
-
-.GreyStar svg{
+.GreyStar {
     color: grey;
     opacity: 0.3;
 }
-/* SECTION HERBERGEMENTS --- NOTATION ETOILES */
 
-#Image1item1{
+.Picture {
     width: 240px;
     max-height: 115px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px; 
-}
-
-#Image2item2
-{
-    width: 240px;
-    max-height: 115px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#Image3item3{
-    width: 240px;
-    max-height: 115px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#Image4item4{
-    width: 240px;
-    max-height: 115px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
-#Image5item5{
-    width: 240px;
-    max-height: 115px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
-#Image6item6{ 
-    width: 240px;/* Image étirée */
-    max-height: 115px;/* Image étirée */
-    border-top-left-radius: 10px;/* Image étirée */
-    border-top-right-radius: 10px;/* Image étirée */
     object-fit: cover;
-}
-
-i{
-    color: blue;
 }
 
 h4 a {
@@ -229,46 +175,41 @@ h4 a {
     color: black;
 }
 
-/* [------------------------------SECTION HERBERGEMENTS------------------------------] */
+/* [-----------------------------------ASIDE-----------------------------------] */
 aside {
-    max-width: 350px;
-    display: grid;
-    grid-template-columns: 37% 63%;
-    grid-template-rows: 15% 28% 28% 28%;
-    margin-top: 50px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
 }
 
-.LPP1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-self: left;
-    align-self: center;
+.Titleaside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#FI1 {
+.Titleaside i {
+    color: black;
+}
+
+.Blocinside {
+    display: flex;
+    flex-direction: column;
+}
+
+.Pictureaside {
     width: 127px;
-    height: 120px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; 
-    grid-column-start: 1;
-    grid-column-end: 1;
-
+    height: 134px;
+    object-fit: cover;
+    float: left;
 }
 
-.FirstImage{
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    
-}
 
-.logoLPP1 {
-    grid-column-start: 3; /* logo qui sort de la page */
-    grid-column-end: 3;/* logo qui sort de la page */
-    justify-self: left;/* logo qui sort de la page */
-    align-self: center;/* logo qui sort de la page */
-}
+
+
+
+
 
 article {
     display: grid;
