@@ -497,8 +497,124 @@ footer {
     footer {
         padding: 0 0 0 0;
     }
-   
-
 }
 
+@media screen and (max-width: 800px) {
+    .Accommodation {
+        max-height: 2500px;
+        padding-bottom: 20px;
+    }
 
+    .Content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90px 1fr 1fr 1fr;
+    }
+
+    .TitleAccommodation {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .Search2 {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 600px) {
+       header nav {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "logo nav3" "nav1 nav2";
+    }
+
+    .Logo img {
+        grid-area: logo;
+    }
+
+    .Logo {
+        justify-self: center;
+        padding-top: 15px;
+    }
+
+    .nav3 {
+        grid-area: nav3;
+    }
+
+    .nav1 {
+        grid-area: nav1;
+        border-top: none;
+        border-bottom: solid #0065fc;
+        padding-bottom: 15px;
+    }
+
+    .nav2 {
+        grid-area: nav2;
+        padding-bottom: 15px;
+    }
+
+    .Content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 1fr 1fr 1fr 1fr 1fr 1fr 90px;
+        grid-template-areas: "TitleAccommodation" "item1" "item2" "item3" "item4" "item5" "item6" "More";
+    }
+
+    .TitleAccommodation {
+        grid-area: TitleAccommodation;
+    }
+
+    .item1 {
+        grid-area: item1;
+    }
+
+    .item2 {
+        grid-area: item2;
+    }
+
+    .item3 {
+        grid-area: item3;
+    }
+
+    .item4 {
+        grid-area: item4;
+    }
+
+    .item5 {
+        grid-area: item5;
+    }
+
+    .item6 {
+        grid-area: item6;
+    }
+
+    .More {
+        grid-area: More;
+    }
+    
+    .TitleAccommodation {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    aside {
+        max-height: 600px;
+    }
+
+    .Activites {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+        grid-template-areas: "Blocactivites1" "Blocactivites2" "Blocactivites3" "Blocactivites4";
+    }
+
+    article {
+        max-width: 600px;
+        max-height: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+}
