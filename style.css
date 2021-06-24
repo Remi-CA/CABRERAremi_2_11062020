@@ -367,7 +367,7 @@ article h2 {
     justify-content: space-between;
 }
 
-.Blocactivites2  {
+.Blocactivites2   {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -384,11 +384,6 @@ article h2 {
     height: 390px;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* Internet Explorer 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
 }
 
 .Img2 {
@@ -396,11 +391,6 @@ article h2 {
     height: 115px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* Internet Explorer 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
 }
 
 .Img3 {
@@ -408,11 +398,6 @@ article h2 {
     height: 115px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* Internet Explorer 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
 }
 
 .Img4 {
@@ -420,11 +405,6 @@ article h2 {
     height: 390px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* Internet Explorer 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
 }
 
 .Img5 {
@@ -432,11 +412,6 @@ article h2 {
     height: 115px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* Internet Explorer 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
 }
 
 .Img6 {
@@ -444,6 +419,9 @@ article h2 {
     height: 115px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
+}
+
+.Blocactivites {
     -webkit-transition: all 1s ease; /* Safari et Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -ms-transition: all 1s ease; /* Internet Explorer 9 */
@@ -451,7 +429,7 @@ article h2 {
     transition: all 1s ease;
 }
 
-.Img1:hover {
+.Blocactivites:hover {
     -webkit-transform:scale(1.10); /* Safari et Chrome */
     -moz-transform:scale(1.10); /* Firefox */
     -ms-transform:scale(1.10); /* Internet Explorer 9 */
@@ -459,45 +437,22 @@ article h2 {
     transform:scale(1.10);
 }
 
-.Img2:hover {
-    -webkit-transform:scale(1.25); /* Safari et Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* Internet Explorer 9 */
-    -o-transform:scale(1.25); /* Opera */
-    transform:scale(1.25);
+.Blocactivites a {
+    text-decoration: none;
+    color: black;
+    
 }
 
-.Img3:hover {
-    -webkit-transform:scale(1.25); /* Safari et Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* Internet Explorer 9 */
-    -o-transform:scale(1.25); /* Opera */
-    transform:scale(1.25);
+.Activites h3 {
+    border: 5px solid transparent;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+    margin: 0;
+    border: 0;
+    padding: 15px 0 15px 5%;
 }
 
-.Img4:hover {
-    -webkit-transform:scale(1.10); /* Safari et Chrome */
-    -moz-transform:scale(1.10); /* Firefox */
-    -ms-transform:scale(1.10); /* Internet Explorer 9 */
-    -o-transform:scale(1.10); /* Opera */
-    transform:scale(1.10);
-}
 
-.Img5:hover {
-    -webkit-transform:scale(1.25); /* Safari et Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* Internet Explorer 9 */
-    -o-transform:scale(1.25); /* Opera */
-    transform:scale(1.25);
-}
-
-.Img6:hover {
-    -webkit-transform:scale(1.25); /* Safari et Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* Internet Explorer 9 */
-    -o-transform:scale(1.25); /* Opera */
-    transform:scale(1.25);
-}
 
 /* [-----------------------------------FOOTER-----------------------------------] */
 ol {
@@ -541,6 +496,7 @@ li a {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 1fr;
+        row-gap: 30px;
         grid-template-areas: 
             "aside" "Content";
     }
@@ -551,6 +507,16 @@ li a {
 
     aside {
         row-gap: 20px;
+        width: 94%;
+    }
+
+    .Bloc {
+        width: 94%;
+    }
+
+    .Content {
+        max-width: 100%;
+        width: 94%;
     }
 
     article {
@@ -565,8 +531,13 @@ li a {
     .Activites {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 180px 1fr;
+        grid-template-rows: 180px 300px;
         grid-template-areas: "Blocactivites1 Blocactivites3" "Blocactivites2 Blocactivites4";
+    }
+
+    .Blocactivites {
+        max-width: 300px;
+        max-height: 115px;
     }
 
     .Blocactivites1 {
@@ -585,9 +556,11 @@ li a {
         grid-area: Blocactivites4;
     }
 
-    footer {
-        padding: 0 0 0 0;
+    #footer {
+        padding-top: 20px;
     }
+
+  
 }
 
 @media screen and (max-width: 800px) {
@@ -610,6 +583,10 @@ li a {
     .Search2 {
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .footer {
+        flex-direction: column;
     }
 }
 
@@ -646,6 +623,7 @@ li a {
     }
 
     .Content {
+        background-color: white;
         grid-template-columns: 1fr;
         grid-template-rows: 90px 1fr 1fr 1fr 1fr 1fr 1fr 90px;
         grid-template-areas: "TitleAccommodation" "item1" "item2" "item3" "item4" "item5" "item6" "More";
@@ -655,6 +633,15 @@ li a {
         grid-area: TitleAccommodation;
     }
 
+    .item  {
+        width: 94%;
+    }
+
+    .Picture {
+        max-width: 100%;
+        width: 100%;
+    }
+ 
     .item1 {
         grid-area: item1;
     }
@@ -692,10 +679,21 @@ li a {
         max-height: 600px;
     }
 
+    .Blocactivites {
+        min-height: 200px;
+        max-width: 100%;
+    }
+
+    .Blocactivites img {
+        max-width: 100%;
+        width: 100%;
+    }
+
     .Activites {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+        grid-template-rows: 200px 1fr 200px 1fr;
+        justify-content: initial;
         grid-template-areas: "Blocactivites1" "Blocactivites2" "Blocactivites3" "Blocactivites4";
     }
 
@@ -704,7 +702,7 @@ li a {
         max-height: none;
     }
 
-    footer {
+    .footer {
         flex-direction: column;
     }
 
