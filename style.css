@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
 
 html {
-    margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
 body {
-    max-width: 1440px;
-    margin: auto;
+    margin: 0;
 }
 
 /*  [-----------------------------------HEADER-----------------------------------] */
@@ -201,11 +199,22 @@ i{
     color: blue;
 }
 
+.Banner {
+    max-width: 1440px;
+    margin: auto;
+}
+
+main {
+    margin-left: 30px;
+}
+
 /* [------------------------------ACCOMMODATION------------------------------] */
 .Accommodation {
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 110px;
+    padding-bottom: 40px;
 }
 /* [-------------------------CONTENT-------------------------] */
 .Content{
@@ -351,8 +360,9 @@ aside i {
 
 /* [-----------------------------------ARTICLE-----------------------------------] */
 article {
-    max-width: 1340px;
-    max-height: 475px;
+    max-width: 1440px;
+    margin: auto;
+    max-height: 500px;
     padding-bottom: 60px;
 }
 
@@ -386,14 +396,14 @@ article h2 {
 
 .Img2 {
     width: 300px;
-    height: 115px;
+    height: 180px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
 
 .Img3 {
     width: 300px;
-    height: 115px;
+    height: 110px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
@@ -407,14 +417,15 @@ article h2 {
 
 .Img5 {
     width: 300px;
-    height: 115px;
+    height: 140px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
+ 
 }
 
 .Img6 {
     width: 300px;
-    height: 115px;
+    height: 150px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
@@ -452,6 +463,7 @@ article h2 {
 
 
 
+
 /* [-----------------------------------FOOTER-----------------------------------] */
 ol {
     padding-left: 0px;
@@ -467,22 +479,26 @@ li a {
     color: black;
 }
 
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
 .footer {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    background-color: #F2F2F2;
+    max-width: 1440px;
+    width: 100%;
+    margin-left: 30px;
 }
 
 
 
 /* [-----------------------------------MEDIA QUERIES-----------------------------------] */
 @media screen and (max-width: 1260px) {
-    body {
-      width: 90%;
-    }
-
-    .Logo {
+       .Logo {
         padding-right: none;
     }
 
@@ -497,6 +513,7 @@ li a {
         row-gap: 30px;
         grid-template-areas: 
             "aside" "Content";
+        margin-right: 30px;
     }
 
     .Accommodation .Content {
@@ -618,6 +635,13 @@ li a {
     .nav2 {
         grid-area: nav2;
         padding-bottom: 15px;
+        border-bottom: solid rgba(231, 231, 231, 0.938);
+    }
+
+    .nav2:hover {
+        border-top: none;
+        border-bottom: solid;
+        color: #0065fc;
     }
 
     .Content {
@@ -693,6 +717,7 @@ li a {
         grid-template-rows: 200px 1fr 200px 1fr;
         justify-content: initial;
         grid-template-areas: "Blocactivites1" "Blocactivites2" "Blocactivites3" "Blocactivites4";
+        margin-right: 30px;
     }
 
     article {
