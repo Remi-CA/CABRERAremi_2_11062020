@@ -812,6 +812,11 @@ li a {
 }
 
 @media screen and (max-width: 375px) {
+
+    main {
+        margin-right: 0;
+    }
+  
     header nav {
         grid-template-rows: 50px 80px;
     }
@@ -852,6 +857,11 @@ li a {
 
     article {
         padding-left: 25px;
+        margin-right: 25px;
+    }
+
+    aside {
+        padding-right: 0;
     }
 
 }
