@@ -526,6 +526,7 @@ li a {
 
     aside {
         row-gap: 20px;
+        width: 94%;
     }
 
     .Bloc {
@@ -786,7 +787,7 @@ li a {
 
     aside {
         padding-right: 0;
-        width: 95%;
+        width: 96%;
     }
 
     .footer {
@@ -820,10 +821,16 @@ li a {
 
 }
 
+@media screen and (max-width: 520px) {
+    aside {
+        max-width: 95%;
+    }
+}
+
 @media screen and (max-width: 475px) {
 
     aside {
-        max-width: 90%;
+        max-width: 94%;
     }
     
 }
