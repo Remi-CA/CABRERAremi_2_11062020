@@ -873,6 +873,7 @@ li a {
 
     aside {
         padding-right: 0;
+        max-width: 94%;
     }
 
 }
