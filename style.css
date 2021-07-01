@@ -526,7 +526,6 @@ li a {
 
     aside {
         row-gap: 20px;
-        width: 94%;
     }
 
     .Bloc {
@@ -644,7 +643,7 @@ li a {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
      header nav {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -787,8 +786,7 @@ li a {
 
     aside {
         padding-right: 0;
-        max-width: 600px;
-        width: 96%;
+        width: 95%;
     }
 
     .footer {
@@ -820,6 +818,14 @@ li a {
         width: 100%;
     }
 
+}
+
+@media screen and (max-width: 475px) {
+
+    aside {
+        max-width: 90%;
+    }
+    
 }
 
 @media screen and (max-width: 375px) {
@@ -877,3 +883,4 @@ li a {
     }
 
 }
+
