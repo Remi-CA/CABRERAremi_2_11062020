@@ -662,6 +662,7 @@ li a {
 
     main {
         margin-left: 0px;
+        margin-right: 0px;
     }
 
     .Accommodation {
@@ -784,6 +785,11 @@ li a {
         padding-left: 15px;
     }
 
+    aside {
+        padding-right: 0;
+        max-width: 550px;
+    }
+
     .footer {
         flex-direction: column;
     }
@@ -807,6 +813,10 @@ li a {
 
     #footer {
         padding: 0rem 2rem 0rem 2rem;
+    }
+
+    html {
+        width: 100%;
     }
 
 }
